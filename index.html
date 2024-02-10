@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="asstes/css/style.css">
+    <title>Document</title>
+</head>
+<!--Esto es un comentario en HTML-->
+<!--para introducir una imagen: <img src="link de la imagen" alt="descripción de la imagen">-->
+
+<body>
+    <h1>Fundamentos de la Programación</h1>
+    <div>
+        <h2>Página de MDN </h2>
+        <p>
+            Aquí podéis consultar el funcionamiento de los elementos principales, tanto de HTML, como de CSS, como de JavaScript: </br>
+            <a href="https://developer.mozilla.org/en-US/">https://developer.mozilla.org</a>
+        </p>
+    </div>
+    <div>
+        <h2>Bloque 1</h2>
+        <div>
+            <div>
+                <h3>Variables</h3>
+                <p>
+                    Una variable en programación es un espacio de memoria que almacena un valor que puede cambiar durante la
+                    ejecución de un programa. Las variables tienen un nombre que las identifica y un tipo que determina el rango
+                    de valores que pueden almacenar y las operaciones que se pueden realizar con ellas. Las variables se pueden
+                    declarar explícitamente o inferirse implícitamente según el lenguaje de programación que se utilice.
+                </p>
+
+                <div>
+                    <h4>Palabras clave para declarar una variable en JavaScript</h4>
+                    <ul>
+                        <li><b>var:</b>
+                            <ul>
+                                <li>
+                                    Es la forma más antigua de declarar variables en JavaScript. Tiene un alcance global o de función, 
+                                    lo que significa que la variable es visible en todo el código o dentro de la función donde se declara. 
+                                    Además, permite redeclarar y reasignar el valor de la variable sin problemas. Sin embargo, esto puede 
+                                    causar problemas de sobrescritura o colisión de nombres, especialmente en código grande o complejo. 
+                                    Por eso, se recomienda evitar el uso de var y preferir let o const.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>let:</b>
+                            <ul>
+                                <li>
+                                    Es una forma más moderna y segura de declarar variables en JavaScript. Tiene un alcance de bloque, 
+                                    lo que significa que la variable solo es visible dentro del bloque donde se declara (por ejemplo, un bucle, 
+                                    una condición o una función). Además, no permite redeclarar la variable con el mismo nombre en el mismo bloque, 
+                                    pero sí permite reasignar su valor. Esto evita los problemas de var y ofrece más control sobre el uso de las variables.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>const:</b>
+                            <ul>
+                                <li>
+                                    Es otra forma más moderna y segura de declarar variables en JavaScript. Al igual que let, 
+                                    tiene un alcance de bloque y no permite redeclarar la variable con el mismo nombre en el mismo bloque. 
+                                    Sin embargo, a diferencia de let, no permite reasignar el valor de la variable una vez que se ha 
+                                    inicializado. Esto significa que la variable debe tener un valor asignado al momento de su declaración y 
+                                    ese valor no puede cambiar. Esto es útil para declarar constantes o valores que no deben modificarse.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Tipos de variables primitivas en JavaScript</h4>
+                    <ul>
+                        <li><b>Números</b>
+                            <ul>
+                                <li>
+                                    Números enteros
+                                </li>
+                                <li>
+                                    Números con decimales
+                                </li>
+                                <li>
+                                    NaN (Not a number): Números que no existen (Ej: 0/0)
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Booleanos</b>
+                            <ul>
+                                <li>
+                                    Pueden tomar los valores "true" o "false".
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Cadenas de caracteres (string)</b>
+                            <ul>
+                                <li>
+                                    Un String es un tipo de dato que representa una secuencia de caracteres. 
+                                    En JavaScript, los Strings se pueden crear usando comillas simples (') o dobles ("), 
+                                    o usando el acento grave (`).
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Null</b>
+                            <ul>
+                                <li>
+                                    Null es un valor especial que representa la ausencia o la falta INTENCIONAL de un valor. 
+                                    Es uno de los valores primitivos de JavaScript. Null se puede asignar a una variable o a 
+                                    una propiedad de un objeto para indicar que no tiene ningún valor. 
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Undefined</b>
+                            <ul>
+                                <li>
+                                    Undefined es un valor especial que indica que una variable no tiene ningún valor asignado. 
+                                    También se usa como el valor predeterminado de las propiedades de los objetos que no existen, 
+                                    de los parámetros de las funciones que no se pasan, y del resultado de las expresiones que no 
+                                    devuelven ningún valor.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Operadores en JavaScript</h4>
+                    <ul>
+                        <li><b>Suma (+)</b>
+                            <ul>
+                                <li>
+                                    Da como resultado la suma de los elementos a su izquierda y a su derecha.
+                                </li>
+                                <li>
+                                    Se puede usar para concatenar cadenas de caracteres
+                                </li>
+                                <li>
+                                    Ejemplo: 3 + 2 da como resultado 5
+                                </li>
+                                <li>
+                                    Ejemplo: "Hola, " + "¿Qué tal?" da como resultado "Hola, ¿Qué tal?"
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Resta (-)</b>
+                            <ul>
+                                <li>
+                                    Da como resultado la resta del número a su izquierda menos el de su derecha.
+                                </li>
+                                <li>
+                                    Ejemplo: 3 - 2 da como resultado 1
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Multiplicación (*)</b>
+                            <ul>
+                                <li>
+                                    Da como resultado la multiplicación de los elementos a su izquierda y a su derecha.
+                                </li>
+                                <li>
+                                    Ejemplo: 3 * 2 da como resultado 6
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>División (/)</b>
+                            <ul>
+                                <li>
+                                    Da como resultado la división del número a su izquierda entre el de su derecha.
+                                </li>
+                                <li>
+                                    Ejemplo: 3 % 2 da como resultado 1.5 <br>
+                                    (Recuerda que en Js el signo decimal es un punto y NO una coma).
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Módulo (%)</b>
+                            <ul>
+                                <li>
+                                    Da como resultado el resto de la división del número a su izquierda entre el de su derecha.
+                                </li>
+                                <li>
+                                    Ejemplo: 3 % 2 da como resultado 1
+                                </li>
+                                <li>
+                                    Recuerda que el resto de una división sólo puede dar resultados entre 0 y el divisor - 1
+                                    y que, si el dividendo es múltiplo del divisor, el resultado será 0.
+                                </li>
+                                <li>
+                                    Ejemplo: n/60 puede dar resultados entre 0 y 59.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Exponente (**)</b>
+                            <ul>
+                                <li>
+                                    Da como resultado número a su izquierda elevado al de su derecha.
+                                </li>
+                                <li>
+                                    Ejemplo: 3 ** 2 da como resultado 9
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Operadores sobre una variable en JavaScript</h4>
+                    <ul>
+                        <li><b>Sumar/Restar 1 post-valor (i++/i--)</b>
+                            <ul>
+                                <li>
+                                    Da como resultado el valor actual de la variable y después le suma/resta uno.
+                                </li>
+                                <li>
+                                    Ejemplo: variable = 3, variable++ da como resultado 3, pero ahora en variable hay guardado un 4.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Sumar/Restar 1 pre-valor (++i/--i)</b>
+                            <ul>
+                                <li>
+                                    Suma/resta uno al valor de la variable y devuelve el resultado.
+                                </li>
+                                <li>
+                                    Ejemplo: variable = 3, variable++ da como resultado 4.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Suma (+=)</b>
+                            <ul>
+                                <li>
+                                    Suma a la variable el resultado de la operación a la derecha del "=".
+                                </li>
+                                <li>
+                                    Se puede usar para concatenar cadenas de caracteres
+                                </li>
+                                <li>
+                                    Ejemplo: Si n = 3, tras n += 2 hay un 5 en n.
+                                </li>
+                                <li>
+                                    Ejemplo: Si n = "Hola, ", tras n += "¿Qué tal?" hay un "Hola, ¿Qué tal?" en n.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Resta (-=)</b>
+                            <ul>
+                                <li>
+                                    Resta a la variable el resultado de la operación a la derecha del "=".
+                                </li>
+                                <li>
+                                    Ejemplo: Si n = 3, tras n -= 2 hay un 1 en n.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Multiplicación (*=)</b>
+                            <ul>
+                                <li>
+                                    Multiplica la variable por el resultado de la operación a la derecha del "=".
+                                </li>
+                                <li>
+                                    Ejemplo: Si n = 3, tras n *= 2 hay un 6 en n.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>División (/=)</b>
+                            <ul>
+                                <li>
+                                    Divide la variable entre el resultado de la operación a la derecha del "=".
+                                </li>
+                                <li>
+                                    Ejemplo: Si n = 3, tras n /= 2 hay un 1.5 en n.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Módulo (%=)</b>
+                            <ul>
+                                <li>
+                                    Divide la variable entre el resultado de la operación a la derecha del "=" y guarda el resto de dicha división en la variable.
+                                </li>
+                                <li>
+                                    Ejemplo: Si n = 3, tras n %= 2 hay un 1 en n.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

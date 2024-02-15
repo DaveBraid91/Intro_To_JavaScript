@@ -5,8 +5,15 @@ console.log(n);
 
 //Tipos de variable predefinidos
 //Números
-let myNumber = 5;
+let myNumber = n;
+n = 3;
+console.log(`myNumber vale: ${myNumber} \nn vale: ${n}`);
 let myNumber2 = 5.55555555;
+
+
+let myBeautifulLittleVariable;
+//let my_beautiful_little_variable; (mal)
+
 console.log(typeof(myNumber));
 console.log(typeof(myNumber2));
 
@@ -20,7 +27,30 @@ let myBool = true;
 let myBool2 = false;
 
 //String
+let myString = "Dijo: 'Hola, ¿Qué tal?'";
+console.log(myString);
+myString = 'Dijo:      "Hola, ¿Qué tal?"';
+console.log(myString);
+let myString2 = `Dijo: "What's up, hommie?"`;
+console.log(myString);
+console.log("9" + 9);
+console.log(myString + " " + myString2);
+console.log(`${myString} ${myString2}`);
 
+console.log(myString.length);
+console.log(`myString en minúsicula: ${myString.toLowerCase()}`);
+console.log(`myString no ha cambiado: ${myString}`);
+//A partir de esta línea myString;
+myString = myString.toLowerCase();
+
+console.log(`La primera 'a' en myString está en el índice: ${myString.indexOf('hola')}`);
+
+let saludo = myString.slice(myString.indexOf('hola'), myString.indexOf('hola') + 'hola'.length);
+console.log(saludo);
+
+let saludoGritando = saludo.toUpperCase();
+
+console.log(myString2.replace('hommie', 'Usuario Random'));
 //Undefined
 
 //Null
@@ -44,10 +74,19 @@ n = 4;
 console.log(++n);
 console.log(n);
 
-
-
+//n = n + 4;
+n += 4;
+console.log(n);
+//n = n - 5;
+n -= 5;
+console.log(n);
+//n = n % 2;
+n %= 2;
+console.log(n);
 /*
-n *= 2;
+n = Math.Random();
+
+n *= 7;
 
 console.log(n);
 

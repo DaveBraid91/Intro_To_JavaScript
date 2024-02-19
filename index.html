@@ -284,6 +284,72 @@
                         </li>
                     </ul>
                 </div>
+                <div>
+                    <h4>Strings (Cadenas de caracteres)</h4>
+                    <ul>
+                        <li><b>Formas de crear Strings:</b>
+                            <ul>
+                                <li>Comillas simples (')</li>
+                                <li>Ejemplo: let myString = 'Dijo: "Hola, ¿Qué tal?"'</li>
+                                <li>Comillas dobles (")</li>
+                                <li>Ejemplo: myString = "Dijo: 'Hola, ¿Qué tal?'"</li>
+                                <li>Acento grave (`)</li>
+                                <li>Ejemplo: let myString = `Dijo: "What's up, hommie?"`</li>
+                            </ul>
+                        </li>
+                        <li><b>Índice de los caracteres en los Strings</b>
+                            <ul>
+                                <li>Cada caracter de una cadena de caracteres tiene asociado un índice.</li>
+                                <li>El primero tiene el íncide 0 y el último tiene índice longitud - 1.</li>
+                                <li>Ejemplo: En myString el caracter "D" tiene el índice 0 y el caracter "'" tiene el índice 22 (23 - 1).</li>
+                                <li>let myChar = myString[7] guarda "</li>
+                            </ul>
+                        </li>
+                        <li><b>Plantillas literales</b>
+                            <ul>
+                                <li>Las plantillas literales son cadenas literales que permiten el uso de expresiones incrustadas</li>
+                                <li>Sólo se pueden usar entre acentos graves</li>
+                                <li>
+                                    Ejemplo: myString = `He contado ${3 + 4} ovejas.` <br>
+                                    guarda en myString "He contado 7 ovejas."
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Métodos de String</b>
+                            <ul>
+                                <li>Cambio de mayúsculas y minúsculas:
+                                    <ul>
+                                        <li>toLowerCase() devuelve el string con todas las letras minúsculas.</li>
+                                        <li>Ejemplo: myString.toLowerCase() devuelve "dijo: 'hola, ¿qué tal?'"</li>
+                                        <li>toUpperCase() devuelve el string con todas las letras mayúsculas.</li>
+                                        <li>Ejemplo: myString.toUpperCase() devuelve "DIJO: 'HOLA, ¿QUÉ TAL?'"</li>
+                                    </ul>
+                                </li>
+                                <li>Buscar por índice (indexOf(arg)):
+                                    <ul>
+                                        <li>myString.indexOf(arg) devuelve el índice del primer elemento del string guardado en arg, si se encuentra en myString</li>
+                                        <li>Ejemplo: myString.indexOf('hola') devuelve un 7</li>
+                                        <li>Si no encuentra el string guardado en el argumento, devuelve un -1</li>
+                                    </ul>
+                                </li>
+                                <li>Trocear Strings (slice(arg) y slice(arg1, arg2))
+                                    <ul>
+                                        <li>myString.slice(arg) devuelve myString, a partir del índice que indique arg, hasta el final.</li>
+                                        <li>Ejemplo: myString.slice(4) devuelve ", ¿Qué tal?"</li>
+                                        <li>myString.slice(arg1, arg2) devuelve myString, a partir del índice que indique arg1, hasta el índice que indique arg2 (no incluído).</li>
+                                        <li>Ejemplo: myString.slice(0, 5) devuelve "Dijo"</li>
+                                    </ul>
+                                </li>
+                                <li>Reemplazar partes de un String (replace(arg1, arg2))
+                                    <ul>
+                                        <li>myString.replace(arg1, arg2) devuelve myString, sustituyendo el string indicado en arg1, por el indicado en arg2.</li>
+                                        <li>Ejemplo: myString.replace("Hola", "Saludos") devuelve "Saludos, ¿Qué tal?"</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

@@ -29,7 +29,7 @@ let myBool2 = false;
 //String
 let myString = "Dijo: 'Hola, ¿Qué tal?'";
 console.log(myString);
-myString = 'Dijo:      "Hola, ¿Qué tal?"';
+myString = 'Dijo: "Hola, ¿Qué tal?"';
 console.log(myString);
 let myString2 = `Dijo: "What's up, hommie?"`;
 console.log(myString);

@@ -83,6 +83,95 @@ console.log(n);
 //n = n % 2;
 n %= 2;
 console.log(n);
+
+//CONSTANTES
+const pi = 3.14;
+//pi = 2;
+const gmailEnding = "@gmail.com";
+
+//FLUJO DE CÓDIGO
+//Condicionales
+n = 8;
+if(n % 2 === 1)
+{
+    console.log("n es impar");
+}
+else
+{
+    console.log("n es par");
+}
+
+if(n > 0)
+{
+    console.log("n es positivo.");
+}
+else if(n < 0)
+{
+    console.log("n es negativo.");
+    console.log("Pero está trabajando en ello.");
+}
+else
+{
+    console.log("n es cero.")
+}
+
+n = 15;
+
+if(n >= 1 && n <= 10)
+{
+    console.log(`El número ${n} está entre 1 y 10`);
+}
+else
+{
+    console.log("Te he pedido un número entre 1 y 10, pedazo de cacho de trozo de mula en miniatura.");
+}
+
+if(!(n < 1 || n > 10))
+{
+    console.log(`El número ${n} está entre 1 y 10`);
+}
+else
+{
+    console.log("Te he pedido un número entre 1 y 10, pedazo de cacho de trozo de mula en miniatura.");
+}
+
+const colorGreen =
+{
+    red : 0,
+    green : 15,
+    blue : 0
+}
+
+//color.green = 150;
+//color[1] = 150;
+colorGreen['green'] = 255;
+
+const persona = 
+{
+    nombre : "Saria",
+    apellido : "Kokiri",
+    edad : 56,
+    colorDePelo : colorGreen
+}
+
+//Esto sería mal hecho
+// let alumnos = ["Pepito", "Juanita", "José"];
+// console.log(alumnos);
+// console.log(alumnos[1]);
+// alumnos[7] = "Saria";
+// console.log(alumnos[5]);
+
+let alumnos = ["Pepito", "Juanita", "José"];
+console.log(alumnos);
+console.log(alumnos[1]);
+alumnos.push("Saria");
+console.log(alumnos);
+let primerAlumno = alumnos.shift();
+console.log(alumnos);
+//alumnos = [];
+
+
+
 /*
 n = Math.Random();
 

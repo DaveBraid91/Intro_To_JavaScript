@@ -168,10 +168,82 @@ alumnos.push("Saria");
 console.log(alumnos);
 let primerAlumno = alumnos.shift();
 console.log(alumnos);
+
+
 //alumnos = [];
 
+const personas = [
+    {
+        nombre : "Saria",
+        apellido : "Kokiri",
+        edad : 56,
+        colorDePelo : colorGreen
+    },
+    {
+        nombre : "Eduardo",
+        apellido : "Manostijeras",
+        edad : 15,
+        colorDePelo : "Negro"
+    },
+    {
+        nombre : "Mario",
+        apellido : "Bros",
+        edad : 23,
+        colorDePelo : "Rojo"
+    }
+]
+
+console.log(personas[1].apellido)
+
+personas.push([
+    {
+        nombre : "Rigoberto",
+        apellido : "Augustino",
+        edad : 101,
+        colorDePelo : "Verde",
+    },
+    {
+        nombre : "Lila",
+        apellido : "Manila",
+        edad : 44,
+        colorDePelo : "Violeta",
+        
+    }
+])
+
+console.log(personas[3])
 
 
+const board = [
+    ["O", "O", " "],
+    [" ", "X", "O"],
+    ["X", "X", " "]
+];
+
+let isOutOfJail = false;
+let contador = 0;
+
+while(!isOutOfJail)
+{
+    let tirada = Math.floor(Math.random() * 6 + 1);
+
+    //Esta es la manera elegante
+    isOutOfJail = tirada > 4;
+
+    //Esta es correcta, pero menos elegante
+    // if(tirada > 4)
+    // {
+    //     isOutOfJail = true;
+    // }
+    // else
+    // {
+    //     isOutOfJail = false;
+    // }
+    contador++;
+
+}
+
+console.log(`He salido de la cárcel tras ${contador} tiradas.`)
 /*
 n = Math.Random();
 

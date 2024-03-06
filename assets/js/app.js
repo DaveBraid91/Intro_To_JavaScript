@@ -51,6 +51,12 @@ console.log(saludo);
 let saludoGritando = saludo.toUpperCase();
 
 console.log(myString2.replace('hommie', 'Usuario Random'));
+
+"\n"
+"\\"
+"We are \"Vikings\""
+'\''
+
 //Undefined
 
 //Null
@@ -134,6 +140,8 @@ else
 {
     console.log("Te he pedido un número entre 1 y 10, pedazo de cacho de trozo de mula en miniatura.");
 }
+
+let x = (n > 0) ? "Positivo" : "Negativo";
 
 const colorGreen =
 {
@@ -244,6 +252,28 @@ while(!isOutOfJail)
 }
 
 console.log(`He salido de la cárcel tras ${contador} tiradas.`)
+
+alert("Hola, qué tal?");
+
+//Funciones
+function funcionSaludo()
+{
+    console.log("Saludos desde el IED");
+}
+
+funcionSaludo();
+// funcionSaludo();
+// funcionSaludo();
+// funcionSaludo();
+// funcionSaludo();
+
+function funcionSaludoConNombre(nombre)
+{
+    console.log(`Saludos desde el IED, ${nombre}!`);
+}
+
+funcionSaludoConNombre("Renata");
+
 /*
 n = Math.Random();
 

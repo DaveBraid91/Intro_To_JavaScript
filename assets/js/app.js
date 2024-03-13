@@ -251,6 +251,11 @@ while(!isOutOfJail)
 
 }
 
+for(let i = 0; i < personas.length; i++)
+{
+
+}
+
 console.log(`He salido de la cárcel tras ${contador} tiradas.`)
 
 alert("Hola, qué tal?");
@@ -267,13 +272,127 @@ funcionSaludo();
 // funcionSaludo();
 // funcionSaludo();
 
+//Funcion con un parámetro
 function funcionSaludoConNombre(nombre)
 {
     console.log(`Saludos desde el IED, ${nombre}!`);
 }
-
+//Llamamos a la función
 funcionSaludoConNombre("Renata");
 
+//Función con dos parámetros
+function funcionSaludoNombreApellido(nombre, apellido)
+{
+    console.log(`Nombre: ${nombre}\nApellido: ${apellido}`);
+}
+//LLamamos a la función
+funcionSaludoNombreApellido("Renata", "Glask")
+
+// //Funciones que devuelven valores
+// function rollDie()
+// {
+//     return Math.floor(Math.random() * 6 + 1);
+// }
+
+// let roll = rollDie();
+
+// console.log(roll);
+
+// function rollDieWithFaces(faces)
+// {
+//     if(faces >= 4 && typeof(faces) === number)
+//     {
+//         return Math.floor(Math.random() * faces + 1);
+//     }
+//     else if(typeof(faces) !== number)
+//     {
+//         return "Introduce un número.";
+//     }
+//     else
+//     {
+//         return "Introduce un número mayor que 3";
+//     }
+    
+// }
+
+let rollDie = function() 
+{
+    return Math.floor(Math.random() * 6 + 1);
+}
+
+let roll = rollDie;
+
+console.log(roll());
+
+const rollDieWithFaces = function(faces)
+{
+    if(faces >= 4 && typeof(faces) == 'number')
+    {
+        return Math.floor(Math.random() * faces + 1);
+    }
+    else if(typeof(faces) != 'number')
+    {
+        return "Introduce un número.";
+    }
+    else
+    {
+        return "Introduce un número mayor que 3";
+    }
+}
+
+const rollDieXTimes = function(times, faces, func)
+{
+    for(let i = 0; i < times; i++)
+    {
+        console.log(func(faces));
+    }
+}
+
+rollDieXTimes(6, 20, rollDieWithFaces);
+
+const personaje = 
+{
+    nombre : "Pablo",
+    clase : "Rogue",
+    atacar : function(func)
+    {
+        func(2, 8, rollDieWithFaces);
+    },
+    defender(func)
+    {
+        func(1, 12, rollDieWithFaces);
+    },
+    printPersonaje()
+    {
+        return `Soy ${this.nombre}, y soy ${this.clase}.`
+    }
+}
+
+const personaje2 =
+{
+    nombre : "Rebeca",
+    clase : "Paladín",
+    atacar : function(func)
+    {
+        func(2, 8, rollDieWithFaces);
+    },
+    defender(func)
+    {
+        func(1, 12, rollDieWithFaces);
+    },
+    printPersonaje : personaje.printPersonaje
+}
+personaje.atacar(rollDieXTimes);
+
+console.log(personaje.printPersonaje());
+
+personaje.nombre = "Abigail";
+
+console.log(personaje.printPersonaje());
+
+console.log(personaje2.printPersonaje());
+
+const print = personaje.printPersonaje;
 /*
 n = Math.Random();
 

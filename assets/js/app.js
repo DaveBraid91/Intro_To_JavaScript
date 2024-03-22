@@ -393,6 +393,68 @@ console.log(personaje.printPersonaje());
 console.log(personaje2.printPersonaje());
 
 const print = personaje.printPersonaje;
+
+const numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+numeros.forEach(function (quimera)
+{
+    console.log(quimera * 10);
+})
+
+const cuadrados = numeros.map(function(numero)
+{
+    return numero * numero;
+})
+
+const nombres = ["Luis", "Antonio", "Salazar", "Ana"];
+
+//Con un forEach, imprimir el número de letras de cada nombre
+nombres.forEach(function(nombre)
+{
+    console.log(`El nombre ${nombre} tiene ${nombre.length} letras.`);
+})
+
+//Guarda en iniciales las iniciales del array "nombres"
+const iniciales = nombres.map(function(nombre)
+{
+    return nombre[0];
+})
+
+//FUNCIONES FLECHA
+
+const rollDieWithFacesArrowFunction = faces =>
+{
+    if(faces >= 4 && typeof(faces) == 'number')
+    {
+        return Math.floor(Math.random() * faces + 1);
+    }
+    else if(typeof(faces) != 'number')
+    {
+        return "Introduce un número.";
+    }
+    else
+    {
+        return "Introduce un número mayor que 3";
+    }
+}
+
+const funcionFlechaSaludo = () =>
+{
+    console.log("Saludos desde el IED.")
+}
+
+//Crea una funcion flecha que reciba como parámetros un array y una función, que tire un dado con tantas caras como 
+//elementos tenga el array e imprima dicho elemento del array.
+
+const iniMiniMainiBoom = (array, func) =>
+{
+    if(array.length >= 4)
+    {
+        console.log(array[func(array.length) - 1])
+    }
+}
+
+iniMiniMainiBoom(nombres, rollDieWithFacesArrowFunction);
 /*
 n = Math.Random();
 
